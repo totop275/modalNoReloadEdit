@@ -13,7 +13,9 @@
   <body>
     <div class="container">
       <h1>Edit tanpa pindah halaman</h1>
+<!--       Tabel dimulai -->
       <table id="mainTable" class="table table-striped">
+<!--           Judul Tabel -->
         <thead class="thead-dark">
           <tr>
             <th>Nama Barang</th>
@@ -21,13 +23,19 @@
             <th>Aksi</th>
           </tr>
         </thead>
+<!--         Judul Tabel selesai -->
         <tbody>
+<!--           Isi tabel, untuk saat ini hanya berisi tombol tambah barang -->
           <tr class="table-primary">
+<!--             Ini tombol tambah barang -->
             <td id="newItemBtn" class="text-center" colspan="3"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newItemModal">Tambah Item Baru</button></td>
           </tr>
+<!--           Barang yang ditambahkan akan ditambahkan kesini oleh javascript di script.js melalui antarmuka modal -->
         </tbody>
       </table>
+<!--       Tabel selesai -->
     </div>
+<!--     Modal untuk barang baru dimulai -->
     <div class="modal fade" id="newItemModal" tabindex="-1" role="dialog" aria-labelledby="newItemModal" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -52,6 +60,8 @@
         </div>
       </div>
     </div>
+<!--     Modal barang baru selesai -->
+<!--     Modal edit barang dimulai -->
     <div class="modal fade" id="editItemModal" tabindex="-1" role="dialog" aria-labelledby="newItemModal" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -76,6 +86,7 @@
         </div>
       </div>
     </div>
+<!--     Modal edit barang selesai -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -84,6 +95,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--     Dibawah ini memasukan javascript kita ke dalam dokumen. javascript ada di ./script.js -->
     <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
