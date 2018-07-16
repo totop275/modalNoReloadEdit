@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>NoReload Edit</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Edit tanpa pindah halaman</h1>
+      <table id="mainTable" class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>Nama Barang</th>
+            <th>Keterangan</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <td id="newItemBtn" class="text-center" colspan="3"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newItemModal">Tambah Item Baru</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal fade" id="newItemModal" tabindex="-1" role="dialog" aria-labelledby="newItemModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tambah Barang Baru</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="nama">Nama Barang</label>
+              <input type="text" id="nama" placeholder="Masukan nama barang disini" class="form-control">
+              <label for="keterangan">Keterangan</label>
+              <input type="text" id="keterangan" placeholder="Masukan keterangan barang disini" class="form-control">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+            <button type="button" id="addItemBtn" class="btn btn-primary">Tambah</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="editItemModal" tabindex="-1" role="dialog" aria-labelledby="newItemModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ubah Barang <span id="namaBarangEdit"></span></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="nama">Nama Barang</label>
+              <input type="text" id="namaEdit" placeholder="Masukan nama barang disini" class="form-control" readonly>
+              <label for="keterangan">Keterangan</label>
+              <input type="text" id="keteranganEdit" placeholder="Masukan keterangan barang disini" class="form-control">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+            <button type="button" id="saveItemBtn" class="btn btn-primary">Simpan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
